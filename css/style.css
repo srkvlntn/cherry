@@ -1,0 +1,206 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol, ul, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem;
+    color: #5c646e;
+}
+
+h2 {
+    font-size: 24px;
+    color: #a5adb8;
+    font-weight: bold;
+}
+
+h2::first-letter {
+    text-transform: uppercase;
+    color: #ff1744;
+}
+
+h3 {
+    font-size: 18px;
+    color: #282d33;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+a {
+    color: #ff1744;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 980px;
+    background-color: white;
+}
+
+.header {
+    border-top: 10px solid #d20000;
+    background-color: #262d34;
+}
+
+.footer {
+    border-bottom: 10px solid #d20000;
+}
+
+.nav {
+    background-color: #ff1744;
+}
+
+.nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    float: left;
+    font-size: 0;
+    list-style: none;
+}
+
+.nav-list li a {
+    display: block;
+    font-size: 16px;
+    padding: 9px 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff1744;
+    text-decoration: none;
+}
+
+.nav-list li a:first-letter {
+    text-transform: uppercase;
+}
+
+.nav-list a:hover {
+    background-color: #99001e;
+}
+
+.nav-list .current a {
+    background-color: #99001e;
+}
+
+.intro {
+    background-color: #262d34;
+    padding: 50px 30px 55px;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 2px 0 #727272;
+    color: white;
+}
+
+.intro h1:first-letter {
+    text-transform: uppercase;
+    color: #ff1744;
+}
+
+.intro h3 {
+    color: white;
+    margin-bottom: 9px;
+}
+
+.intro p {
+    max-width: 485px;
+    line-height: 18px;
+    color: #c9c7c7;
+}
+
+.content-block {
+    padding: 80px 145px;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+.box p {
+    margin-bottom: 24px;
+    line-height: 20px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    margin: 0 -8px;
+}
+
+.row .col {
+    padding: 0 8px;
+    float: left;
+    width: 33.33%;
+}
+
+.row p {
+    line-height: 20px;
+}
+
+.row .col p, ul, ol {
+    line-height: 24px;
+}
+
+.row h2 {
+    margin-bottom: 22px;
+}
+
+.row h3 {
+    margin-bottom: 16px;
+}
+
+.row h4 {
+    margin-bottom: 15px;
+}
+
+.row h4::first-letter {
+    text-transform: uppercase;
+}
+
+.row .col ul,
+.row .col ol {
+    padding-left: 15px;
+}
+
+.row ul, ul ul {
+    list-style-type: disc;
+    margin-bottom: 0;
+}
+
